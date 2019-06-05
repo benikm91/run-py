@@ -10,5 +10,5 @@ class SimpleRun(AbstractRun, ABC):
         self._log_dir = log_dir
 
     @property
-    def root_dir(self) -> str:
+    def root_log_dir(self) -> str:
         return self._log_dir
