@@ -11,6 +11,13 @@ setup(
     packages=find_packages('src'),
     python_requires='>=3',
     include_package_data=True,
+    dependency_links=[
+        "git+ssh://git@github.com/benikm91/timer-py.git"
+    ],
     install_requires=[
+        'Events==0.3',
+        'python-dateutil==2.8.0',
+        'six==1.12.0',
+        'timer==1.0',
     ],
 )
