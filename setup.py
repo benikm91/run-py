@@ -18,6 +18,6 @@ setup(
         'Events==0.3',
         'python-dateutil==2.8.0',
         'six==1.12.0',
-        'timer==1.0',
+        'timer',
     ],
 )
