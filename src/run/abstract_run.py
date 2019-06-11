@@ -18,8 +18,8 @@ class AbstractRunEvents(Events):
 
     def __init__(self) -> None:
         super().__init__()
-        self.before_run: Callable[[], None] = self.before_run
-        self.after_run: Callable[[T], None] = self.after_run
+        # self.before_run: Callable[[], None] = self.before_run
+        # self.after_run: Callable[[T], None] = self.after_run
 
 
 class AbstractRun(Generic[T], ABC):
@@ -68,7 +68,7 @@ class AbstractRun(Generic[T], ABC):
     def _run(self, *arg, **kwargs) -> T:
         pass
 
-    def run(self, *arg, **kwargs):
+    def run(self, *arg, **kwargs) -> T:
 
         os.makedirs(self.run_log_dir, exist_ok=True)
 
