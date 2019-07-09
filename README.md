@@ -7,6 +7,12 @@ Therefore I wrote this small helper repo.
 The main idea is, if you start a run, it copies your python code and console output into a directory. 
 You can then check later what actual code was running and which results where produced.
 
+## Installation
+
+```
+pip install git+https://github.com/benikm91/run-py
+```
+
 ## Example
 
 Let's make a run 'conv3d_run_copy.py' that contains a simple model:
