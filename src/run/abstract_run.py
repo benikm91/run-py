@@ -42,6 +42,15 @@ class AbstractRun(Generic[T], ABC):
         return 'output.txt'
 
     @property
+    def info_file_name(self) -> str:
+        return 'info.txt'
+
+    @property
+    def info_logger(self) -> StdOutToFileLogger:
+        info_file = os.path.join(self.run_log_dir, self.info_file_name)
+        return StdOutToFileLogger(info_file)
+
+    @property
     @abstractmethod
     def root_log_dir(self) -> str:
         pass
