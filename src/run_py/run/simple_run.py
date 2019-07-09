@@ -1,6 +1,6 @@
 from abc import ABC
 
-from run.abstract_run import AbstractRun
+from run_py.run.abstract_run import AbstractRun
 
 
 class SimpleRun(AbstractRun, ABC):

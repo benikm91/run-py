@@ -1,4 +1,4 @@
-from run.simple_run import SimpleRun
+from run_py.run.simple_run import SimpleRun
 
 
 class PlaygroundRun(SimpleRun):

@@ -6,9 +6,9 @@ from typing import TypeVar, Generic, Callable
 
 from events import Events
 
-from util.std_out_to_file_logger import StdOutToFileLogger
 from shutil import copyfile
 
+from run_py.util.std_out_to_file_logger import StdOutToFileLogger
 
 T = TypeVar('T')
 
